@@ -1,6 +1,6 @@
-from fastapi import FastAPI, Body
+from fastapi import FastAPI, Body, APIRouter
 
-app_v2 = FastAPI()
+app_v2 = APIRouter()
 
 @app_v2.get("/version")
 async def get_product_version():
